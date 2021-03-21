@@ -17,7 +17,7 @@ export function ModalEditFood({ isOpen, setIsOpen, editingFood, handleUpdateFood
   const formRef = useRef(null);
 
   const handleSubmit = async (data: IFood) => {
-    handleUpdateFood(data);
+    await handleUpdateFood(data);
     setIsOpen();
   };
 
